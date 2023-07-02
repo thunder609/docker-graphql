@@ -30,7 +30,9 @@ jobs:
  #     run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
     - name: Build Docker Image
       run:  |
-        docker build -t thunder609/docker-graphql:0.1.1 .  
+        docker build -t thunder609/docker-graphql:0.1.1 .
+             docker build -t thunder609/docker-graphql:latest.  
     - name: Push Docker Image
       run:  |
         docker push thunder609/docker-graphql:0.1.1   
+        docker push thunder609/docker-graphql:latest 
