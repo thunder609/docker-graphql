@@ -28,3 +28,9 @@ jobs:
         echo "iniciando fin login"
  #   - name: Build the Docker image
  #     run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    - name: Build Docker Image
+         run:  |
+         docker build -t thunder609/docker-graphql:0.1.1   
+    - name: Push Docker Image
+         run:  |
+         docker push thunder609/docker-graphql:0.1.1   
