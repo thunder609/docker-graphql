@@ -29,7 +29,7 @@ jobs:
         echo "iniciando fin login"
      - name: Build Docker Imagen
        run:  |
-         docker build -t thunder609/docker-graphql .
-     - name: PushDocker Imagen
+         docker build -t thunder609/docker-graphql:0.1.1 .
+     - name: Push Docker Imagen
        run:  |
-         docker push thunder609/docker-graphql .         
+         docker push thunder609/docker-graphql:0.1.1 .         
