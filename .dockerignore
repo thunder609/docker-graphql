@@ -1,0 +1,5 @@
+#prueba
+node_modules
+.git
+.github
+dist
