@@ -45,7 +45,7 @@ jobs:
         docker build -t thunder609/docker-graphql:latest .  
     - name: Push Docker Image
       env:
-         EW_VERSION: ${{ steps.version.outputs.version }}
+        NEW_VERSION: ${{ steps.version.outputs.version }}
       run:  |
         docker push thunder609/docker-graphql:$NEW_VERSION   
         docker push thunder609/docker-graphql:latest 
