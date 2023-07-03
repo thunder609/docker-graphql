@@ -39,7 +39,7 @@ jobs:
  #     run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
     - name: Build Docker Image
       env:
-        NEW_VERSION: ${{ steps.version.outputs.version }
+       NEW_VERSION: ${{ steps.version.outputs.version }
       run:  |
         docker build -t thunder609/docker-graphql:$NEW_VERSION .
         docker build -t thunder609/docker-graphql:latest .  
